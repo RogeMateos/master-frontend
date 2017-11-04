@@ -1,0 +1,19 @@
+{
+  "name": "master-frontend",
+  "version": "1.0.0",
+  "description": "This is a master folder  with  gulp ,bower created for automatically generate tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogeMateos/master-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogeMateos/master-frontend/issues"
+  },
+  "homepage": "https://github.com/RogeMateos/master-frontend#readme"
+}
