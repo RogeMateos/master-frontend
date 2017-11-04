@@ -1,0 +1,17 @@
+{
+  "name": "master-frontend",
+  "description": "This is a master folder  with  gulp ,bower created for automatically generate tasks",
+  "main": "index.js",
+  "authors": [
+    "“rogemateos” <rogemateos@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/RogeMateos/master-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
