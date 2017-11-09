@@ -1,0 +1,159 @@
+.portfolio-item {
+    background-color: #fff;
+    margin-bottom: 3rem;
+
+    .portfolio-item-info {
+        padding: 1rem 2rem;
+
+        color: $color-dark;
+        border: solid 1px $color-border;
+        border-bottom: 0;
+        background-color: #fff;
+
+        .portfolio-item-title {
+            color: $color-primary;
+        }
+
+        .portfolio-item-tags {
+            margin-bottom: 1rem;
+
+            .portfolio-item-tag {
+                font-size: 1.1rem;
+                background-color: $color-light;
+                border: solid 1px $color-border;
+                padding: 0rem 0.8rem;
+                margin: 0rem .5rem .5rem 0rem;
+                display: inline-block;
+                border-radius: 3px;
+
+                &.tag-wordpress {
+                    background-color: $wordpress-color;
+                    border-color: darken($wordpress-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-gulp {
+                    background-color: $gulp-color;
+                    border-color: darken($gulp-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-less {
+                    background-color: $less-color;
+                    border-color: darken($less-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-sass {
+                    background-color: $sass-color;
+                    border-color: darken($sass-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-grunt {
+                    background-color: $grunt-color;
+                    border-color: darken($grunt-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-bower {
+                    background-color: $bower-color;
+                    border-color: darken($bower-color, 10);
+                    color: #fff;
+                }
+                &.tag-bootstrap {
+                    background-color: $bootstrap-color;
+                    border-color: darken($bootstrap-color, 10);
+                    color: #fff;
+                }
+            }
+        }
+
+        .portfolio-item-license  {
+            span {
+                background-color: $color-info;
+                border: solid 1px darken($color-info, 5);
+
+                padding: 0rem 1rem;
+                border-radius: 3px;
+                font-size: 1.1rem;
+                display: inline-block;
+                color: #fff;
+
+                &.free {
+                    background-color: $color-success;
+                    border: solid 1px darken($color-success, 5);
+                }
+            }
+        }
+    }
+
+    .portfolio-item-btn-group {
+        display: table;
+
+        width: 100%;
+
+        a {
+            display: table-cell;
+
+            width: 50%;
+            margin: 0;
+            padding: 0.4rem 0;
+
+            transition: all 0.2s;
+            text-align: center;
+
+            color: $color-medium;
+            border: solid 1px $color-border;
+            background-color: lighten($color-border, 8);
+
+            &:first-child {
+                border-right: 0;
+            }
+
+            i {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                background-color: $color-primary;
+				border-color: $color-primary;
+				color: #fff;
+
+				i {
+					color: #fff;
+				}
+            }
+        }
+    }
+
+    .portfolio-item-img {
+        background-color: #5b6468;
+        overflow: hidden;
+        transition: all ease 0.5s;
+
+
+        img {
+            transition: all ease 0.8s;
+            margin: 0 auto;
+        }
+
+
+        &:hover {
+            background-color: darken(#5b6468, 5%);
+            box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+            img {
+                transform: scale(1.13);
+            }
+        }
+        //padding: 1.5rem;
+
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .portfolio-item-tag {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,92 @@
+.social-sidebar {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        font-size: 1.6rem;
+
+
+        a {
+            display: block;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            margin-bottom: 0.8rem;
+            transition: all ease 0.2s;
+
+            &:hover {
+                //color: $color-primary;
+                text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+                // background-color: $color-success !important;
+            }
+
+
+            i {
+                margin-right: 1rem;
+            }
+
+
+        }
+
+        &:last-child a {
+            margin-bottom: 0;
+        }
+
+        &.rss > a {
+            color: $rss-color;
+            border: dashed 1px $rss-color;
+            &:hover {
+                color: #fff;
+                background-color: $rss-color;
+            }
+        }
+
+        &.twitter > a {
+            color: $twitter-color;
+            border: dashed 1px $twitter-color;
+            &:hover {
+                color: #fff;
+                background-color: $twitter-color;
+            }
+        }
+
+        &.facebook > a {
+            color: $facebook-color;
+            border: dashed 1px $facebook-color;
+            &:hover {
+                color: #fff;
+                background-color: $facebook-color;
+            }
+        }
+
+        &.github > a {
+            color: $github-color;
+            border: dashed 1px $github-color;
+            &:hover {
+                color: #fff;
+                background-color: $github-color;
+            }
+        }
+
+        &.linkedin > a {
+            color: $linkedin-color;
+            border: dashed 1px $linkedin-color;
+            &:hover {
+                color: #fff;
+                background-color: $linkedin-color;
+            }
+        }
+
+        &.google-plus > a {
+            color: $googleplus-color;
+            border: dashed 1px $googleplus-color;
+            &:hover {
+                color: #fff;
+                background-color: $googleplus-color;
+            }
+        }
+    }
+}
+
+.contact-form {
+    margin-bottom: 4rem;
+}

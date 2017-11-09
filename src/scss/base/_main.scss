@@ -1,0 +1,280 @@
+/* --------------------------------------------------------------------------*/
+/* Base
+/* --------------------------------------------------------------------------*/
+
+html {
+    background-color: darken($color-dark, 10);
+}
+
+body {
+    color: #666;
+    background-color: $color-light;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+
+    &.navbar-fixed-mode {
+        margin-top: 90px;
+    }
+}
+
+
+body {
+    overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/preload.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* --------------------------------------------------------------------------*/
+/* Reset Styles
+/* --------------------------------------------------------------------------*/
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+:focus {
+    outline: none !important;
+}
+
+::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/* --------------------------------------------------------------------------*/
+/* Bootstrap theme
+/* --------------------------------------------------------------------------*/
+
+.input-group {
+    input[type='text'] {
+        z-index: 0;
+    }
+}
+
+.input-group-btn {
+    .btn {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    &:hover,
+    &:focus {
+        z-index: 1;
+    }
+}
+
+.relative {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 40px;
+
+    background-color: #fff;
+}
+
+
+/* --------------------------------------------------------------------------*/
+/* Header Page
+/* --------------------------------------------------------------------------*/
+
+.header-page {
+    margin-bottom: 40px;
+    padding: 28px 0 22px 0;
+
+    border-bottom: solid 1px $color-border;
+    background-color: $color-light-alt;
+    .container {
+        position: relative;
+        .breadcrumb {
+            position: absolute;
+            right: 20px;
+
+            display: inline-block;
+
+            margin: 3px 0 0 0;
+            padding: 0;
+
+            vertical-align: top;
+
+            border-radius: 0;
+        }
+    }
+}
+
+.header-title {
+    display: inline-block;
+
+    margin: 0;
+
+    vertical-align: middle;
+
+    font-size: 2em;
+    line-height: 100%;
+}
+
+.site-name {
+    color: $color-primary;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    strong {
+        text-transform: capitalize;
+
+        color: $color-dark;
+
+        font-weight: 700;
+    }
+
+    &.site-name-light {
+        strong {
+            color: $color-light;
+        }
+    }
+}
+
+.wrap-light-alt {
+    padding: 4rem 0;
+
+    border-top: solid 1px $color-border;
+    border-bottom: solid 1px $color-border;
+    background-color: $color-light-alt;
+}
+
+/* Content Box */
+
+.content-box {
+    display: block;
+    overflow: hidden;
+
+    margin-bottom: 2.8rem;
+    padding: 1.5rem;
+
+    text-align: center;
+}
+
+.content-box.box-default {
+    background-color: #f6f6f6;
+}
+
+.content-box.box-default:hover {
+    background-color: #f3f3f3;
+}
+
+
+.content-box.box-primary .content-box-title,
+.content-box.box-info .content-box-title,
+.content-box.box-success .content-box-title,
+.content-box.box-warning .content-box-title,
+.content-box.box-danger .content-box-title,
+.content-box.box-royal .content-box-title {
+    color: #fff;
+}
+
+.content-box-title.counter {
+    margin-top: 0;
+
+    color: #333;
+
+    font-size: 3em;
+}
+
+.content-box.box-primary {
+    color: #fff;
+    background-color: $color-primary;
+}
+
+.content-box.box-success {
+    color: #fff;
+    background-color: $color-success;
+}
+
+.content-box.box-info {
+    color: #fff;
+    background-color: $color-info;
+}
+
+.content-box.box-warning {
+    color: #fff;
+    background-color: $color-warning;
+}
+
+.content-box.box-danger {
+    color: #fff;
+    background-color: $color-danger;
+}
+
+
+.content-box.box-royal {
+    color: #fff;
+    background-color: $color-royal;
+}
+
+
+.content-box.box-primary:hover {
+    background-color: darken($color-primary, 5%);
+}
+
+.content-box.box-success:hover {
+    background-color: darken($color-success, 5%);
+}
+
+.content-box.box-info:hover {
+    background-color: darken($color-info, 5%);
+}
+
+.content-box.box-warning:hover {
+    background-color: darken($color-warning, 5%);
+}
+
+.content-box.box-danger:hover {
+    background-color: darken($color-danger, 5%);
+}
+
+
+.content-box.box-royal:hover {
+    background-color: darken($color-royal, 5%);
+}
+
+/* Preload images */
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  display: none;
+}
+
+.lb-cancel {
+  background: url(../img/loading.gif) no-repeat;
+}
+
+.lb-nav a.lb-prev {
+  background: url(../img/prev.png) left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {;
+  background: url(../img/next.png) right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+  background: url(../img/close.png) top right no-repeat;
+}
